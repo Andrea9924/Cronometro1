@@ -21,7 +21,7 @@ class HomeActivity : AppCompatActivity() {
             val intent:Intent = Intent(this, ActivityCronometro::class.java)
             startActivity(intent)
         }
-
+        //Ignorar comentario
         //Setup
         val bundle = intent.extras
         val email =  bundle?.getString("email")
