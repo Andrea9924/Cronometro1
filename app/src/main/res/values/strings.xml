@@ -6,4 +6,9 @@
     <string name="btn_Detener">Detener</string>
     <string name="btn_Reiniciar">Reiniciar</string>
     <string name="btn_Volver">Volver al menu</string>
+    <string name="EditText1"> Nombre de la Actividad </string>
+    <string name="EditText2"> Seleccione la fecha </string>
+    <string name="EditText3"> Seleccione la Hora </string>
+    <string name="TextView4"> Agregar </string>
+    <string name="prefs_file">PREFERENCE_FILE_KEY</string>
 </resources>

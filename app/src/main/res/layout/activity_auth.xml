@@ -7,6 +7,7 @@
     tools:context=".AuthActivity">
 
     <LinearLayout
+        android:id="@+id/authLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -54,8 +55,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:textColor="@android:color/white"
-                android:text="Registrar" />
+                android:text="Registrar"
+                android:textColor="@android:color/white" />
 
             <Space
                 android:layout_width="8dp"
@@ -67,8 +68,27 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"
-                android:text="Acceder" />
+                android:text="Acceder"
+                android:textColor="@android:color/white" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:autoText="false"
+            android:background="@android:color/white"
+            android:drawableStart="@drawable/common_google_signin_btn_icon_dark_normal"
+            android:drawableLeft="@drawable/common_google_signin_btn_icon_dark_normal"
+            android:freezesText="false"
+            android:text="Sign in with Google"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="false" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

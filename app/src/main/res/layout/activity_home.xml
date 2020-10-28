@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="400dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,5 +66,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cronometro" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/btnCalendario"
+            android:layout_width="377dp"
+            android:layout_height="55dp"
+            android:text="Actividades" />
+
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
