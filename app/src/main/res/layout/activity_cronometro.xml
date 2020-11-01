@@ -4,34 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityCronometro">
+    tools:context=".ActivityCronometro"
+    android:background="@color/blanco">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginRight="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/background">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="#3C3F41"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
             android:gravity="center"
             android:text="@string/txt_Titulo"
             android:textSize="36sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="100dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -39,11 +42,13 @@
             android:layout_height="100dp"
             android:gravity="center"
             android:text="@string/txt_Tiempo"
-            android:textSize="49sp" />
+            android:textSize="49sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="150dp" />
+            android:layout_height="100dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,7 +61,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="@string/btn_Reiniciar" />
+                android:text="@string/btn_Reiniciar"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -69,7 +76,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="@string/btn_Iniciar" />
+                android:text="@string/btn_Iniciar"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -82,7 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="@string/btn_Detener" />
+                android:text="@string/btn_Detener"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
 
         </LinearLayout>
 
@@ -95,7 +106,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="Siguiente"
-            android:text="@string/btn_Volver" />
+            android:text="@string/btn_Volver"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,15 +17,25 @@ enum class ProviderType {
 
 class HomeActivity : AppCompatActivity() {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        btnCrono.setOnClickListener {
+        btnNueva.setOnClickListener {
+
+            val intent:Intent = Intent(this, AgendarActividades::class.java)
+            startActivity(intent)
+        }
+
+        btnCronometro.setOnClickListener {
 
             val intent:Intent = Intent(this, ActivityCronometro::class.java)
+            startActivity(intent)
+        }
+
+        btnCalendario.setOnClickListener {
+
+            val intent:Intent = Intent(this, VerEventos::class.java)
             startActivity(intent)
         }
 
@@ -62,7 +72,8 @@ class HomeActivity : AppCompatActivity() {
             prefs.apply()
 
             FirebaseAuth.getInstance().signOut()
-            onBackPressed()
+            val intent:Intent = Intent(this, AuthActivity::class.java)
+            startActivity(intent)
         }
     }
 }

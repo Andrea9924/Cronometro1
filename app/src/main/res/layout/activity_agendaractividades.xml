@@ -4,114 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#86FBFAFA"
+    android:background="@color/blanco"
     tools:context=".AgendarActividades">
 
-
-    <EditText
-        android:id="@+id/tv4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv2"
-        android:text="Descripción "
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
-
-    <EditText
-        android:id="@+id/tv2"
-        android:layout_width="204dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="157dp"
-        android:layout_marginBottom="537dp"
-        android:text="@string/EditText2"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/tv1"
-        android:layout_width="373dp"
-        android:layout_height="47dp"
+    <LinearLayout
+        android:id="@+id/agendar"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginBottom="617dp"
-        android:text="@string/EditText1"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/tv3"
-        android:layout_width="206dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="213dp"
-        android:layout_marginBottom="481dp"
-        android:text="@string/EditText3"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:background="@color/background">
 
-    <Button
-        android:id="@+id/btnFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="157dp"
-        android:text="Fecha"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/tv1"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Nombre de la Actividad"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"/>
 
-    <Button
-        android:id="@+id/btnHora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginBottom="471dp"
-        android:text="Hora"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
-    <Button
-        android:id="@+id/btnAgregar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginBottom="153dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Agregar" />
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Fecha"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btnCancelar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="613dp"
-        android:layout_marginBottom="71dp"
-        android:text="CANCELAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/tv2"
+            android:layout_width="204dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="-42dp"
+            android:layout_marginLeft="110dp"
+            android:hint= "Seleccione la Fecha"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            android:id="@+id/btnHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Hora"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/tv3"
+            android:layout_width="204dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="110dp"
+            android:hint="Selecionne la Hora"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Descripción "
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnAgregar1"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="110dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Cronometro"
+                android:text="Agregar"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnCancelar1"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btnAgregar1"
+                android:layout_marginHorizontal="110dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Cancelar"
+                android:text="CANCELAR"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

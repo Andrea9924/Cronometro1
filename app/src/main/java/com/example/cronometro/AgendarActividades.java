@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ import java.sql.Time;
 import java.util.Calendar;
 
 public class AgendarActividades extends AppCompatActivity implements View.OnClickListener {
+
 
     Button btnFecha, btnHora, btnAgregar1, btnCancelar1;
     EditText tv1, tv2, tv3, tv4;
@@ -72,5 +74,14 @@ public class AgendarActividades extends AppCompatActivity implements View.OnClic
             }, hora, minutos, false);
             timePickerDialog.show();
         }
+    }
+
+    public void Cronometro(View view){
+        Intent cronometro = new Intent(this, ActivityCronometro.class);
+        startActivity(cronometro);
+    }
+    public void Cancelar(View view){
+        Intent cancelar = new Intent(this, HomeActivity.class);
+        startActivity(cancelar);
     }
 }

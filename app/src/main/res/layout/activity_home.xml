@@ -4,28 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:background="@color/blanco">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
 
         <TextView
             android:id="@+id/emailTextView"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="40dp"
-            android:text="Email" />
+            android:layout_gravity="center"
+            android:text="Email"
+            android:textColor="@color/colorPrimaryDark" />
 
         <Space
             android:layout_width="match_parent"
@@ -33,13 +38,15 @@
 
         <TextView
             android:id="@+id/providerTextView"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="40dp"
-            android:text="Proveedor" />
+            android:layout_gravity="center"
+            android:text="Proveedor"
+            android:textColor="@color/colorPrimaryDark" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="15dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,10 +55,11 @@
 
             <Button
                 android:id="@+id/logOutButton"
-                android:layout_width="0dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
                 android:text="Cerrar Sesion"
                 android:textColor="@android:color/white" />
 
@@ -59,13 +67,17 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="20dp" />
+
 
         <Button
-            android:id="@+id/btnCrono"
-            android:layout_width="match_parent"
+            android:id="@+id/btnNueva"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Cronometro" />
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="Nueva Carrera"
+            android:textColor="@color/background" />
 
         <Space
             android:layout_width="match_parent"
@@ -73,9 +85,28 @@
 
         <Button
             android:id="@+id/btnCalendario"
-            android:layout_width="377dp"
-            android:layout_height="55dp"
-            android:text="Actividades" />
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="Actividades"
+            android:textColor="@color/background" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/btnCronometro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="Cronómetro"
+            android:textColor="@color/background" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
     </LinearLayout>
 
